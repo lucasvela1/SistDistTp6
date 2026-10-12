@@ -1,0 +1,5 @@
+NOMBRE=Worker-sdistX
+RABBIT_HOST=localhost
+RABBIT_PORT=5672
+RABBIT_USER=tpuser
+RABBIT_PASS=tppass

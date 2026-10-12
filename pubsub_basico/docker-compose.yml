@@ -1,0 +1,11 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbit-tp
+    hostname: rabbit-tp
+    ports:
+      - "5672:5672"     # AMQP
+      - "15672:15672"   # consola web
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBIT_USER:-tpuser}
+      RABBITMQ_DEFAULT_PASS: ${RABBIT_PASS:-tppass}
