@@ -20,11 +20,11 @@ def main():
         opcion = input("Opción (1/2/3/4): ").strip()
 
         if opcion == "1":
-            patrones = ["stock.NYSE.*"]
+            patrones = ["stock.NYSE.*"] #El * sirve como wildcard, se subscribe a escuchar todo lo que llegue al stock de NYSE
         elif opcion == "2":
-            patrones = ["stock.#"]
+            patrones = ["stock.#"] #El # sirve como wildcard, se subscribe a escuchar todo lo que llegue al stock
         elif opcion == "3":
-            patrones = ["stock.*.AAPL"]
+            patrones = ["stock.*.AAPL"] #Escucha en todos los mercados lo que sea AAPL
         elif opcion == "4":
             patron_custom = input("Ingresá el patrón deseado: ").strip()
             if patron_custom:
